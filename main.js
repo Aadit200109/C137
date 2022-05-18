@@ -23,7 +23,7 @@ function draw() {
             document.getElementById("number_of_objects").innerHTML = "Number of objects detected are : "+ objects.length;
 
             fill("#FF0000");
-            percent = flor(objects[i].confidence * 100);
+            percent = floor(objects[i].confidence * 100);
             Text(objects[i].label + " " + percent + "%", objects[i].x + 15, objects[i].y + 15);
             noFill();
 
